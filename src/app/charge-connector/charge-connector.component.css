@@ -1,0 +1,27 @@
+
+.container-fluid{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.form{
+    margin-top: 50px;;
+    min-width: 350px;
+    border: 2px solid black;
+    padding: 25px;
+    background-color: rgb(245, 244, 244);
+}
+.form-group{
+    height: 45px;
+    margin-bottom: 5px;
+}
+label{
+    margin-bottom: 0px !important;
+}
+input{
+    height: 30px;
+}
+p{
+    margin-bottom: 0px;
+}
+   
