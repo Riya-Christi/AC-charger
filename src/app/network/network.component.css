@@ -1,25 +1,37 @@
-.form{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: auto;
-    transform: translate(-50%,-50%);
-    min-width: 350px;
-    border: 2px solid black;
-    padding: 25px;
-    background-color: rgb(245, 244, 244);
+.container-fluid{
+    position: relative;
+    width: 100%;
+    padding-top: 40px;
 }
-.form-group{
-    height: 55px;
-    margin-bottom: 5px;
+
+.card-header{
+    background-color: darkgray;
 }
-label{
-    margin-bottom: 0px !important;
+h2{
+    border-bottom: 2px solid black;
 }
-input{
-    height: 30px;
+@media screen and (max-width: 576px) {
+    .form{
+        min-width: 100%;   
+    }
+    .inputCenter{
+        left: 10%;
+    }
+    select{
+        width: 80% !important;
+    }
+    input{
+        width: 80% !important;
+    }
+    .container-fluid{
+        margin-bottom: 20px;
+    }
 }
-p{
-    margin-bottom: 0px;
+@media screen and (min-width: 1024px) {
+    .container-fluid{
+        padding-right: 60px;
+    }
 }
-   
+
+
+

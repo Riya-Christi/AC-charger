@@ -1,22 +1,20 @@
-
+.container-fluid{
+    position: relative;
+    width: 100%;
+    padding-top: 40px;
+}
+.row{
+    margin: 0px;
+}
 .form{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    min-width: 350px;
-    border: 2px solid black;
-    padding: 25px;
-    background-color: rgb(245, 244, 244);
+    width: 80%;
+    margin-left: 50px;
 }
-.form-group{
-    height: 55px;
-    margin-bottom: 5px;
+h2{
+    border-bottom: 2px solid black;
 }
-label{
-    margin-bottom: 0px !important;
+@media screen and (min-width: 1024px) {
+    .container-fluid{
+        padding-right: 60px;
+    }
 }
-input{
-    height: 30px;
-}
-   

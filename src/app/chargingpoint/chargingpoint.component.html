@@ -1,7 +1,7 @@
 <div class="container-fluid">
+  <h2 class="mb-5 ml-3">Charging Point</h2>
     <div class="row">
         <form class="form">
-            <h4>RFID Configuration</h4>
             <div class="form-group">
               <label for="modelname">ChargePoint Modelname</label>
               <input type="text" class="form-control" id="modelname" placeholder="En0.00">
@@ -14,13 +14,15 @@
                 <label for="vendor">ChargePoint Vendor</label>
                 <input type="text" class="form-control" id="rfidTag3" placeholder="Enter _vendor">
               </div>
-              <div class="form-group">
-                <label for="latitude">Latitide</label>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="latitude">Latitide</label>
                 <input type="number" class="form-control" id="latitude" placeholder="1111111">
-              </div>
-              <div class="form-group">
-                <label for="longitude">Longitude</label>
-                <input type="number" class="form-control" id="longitude" placeholder="2222222">
+                </div>
+                <div class="col-md-6">
+                  <label for="longitude">Longitude</label>
+                  <input type="number" class="form-control" id="longitude" placeholder="2222222">
+                </div>
               </div>
               <div class="form-group">
                 <label for="version">Firmware Version</label>

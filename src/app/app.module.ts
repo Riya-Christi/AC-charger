@@ -7,6 +7,7 @@ import { RfidComponent } from './rfid/rfid.component';
 import { NetworkComponent } from './network/network.component';
 import { ChargingpointComponent } from './chargingpoint/chargingpoint.component';
 import { ChargeConnectorComponent } from './charge-connector/charge-connector.component';
+import { SidemenuComponent } from './sidemenu/sidemenu.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ChargeConnectorComponent } from './charge-connector/charge-connector.co
     RfidComponent,
     NetworkComponent,
     ChargingpointComponent,
-    ChargeConnectorComponent
+    ChargeConnectorComponent,
+    SidemenuComponent
   ],
   imports: [
     BrowserModule,
