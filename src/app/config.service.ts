@@ -23,12 +23,10 @@ export class ConfigService {
   }
 
   getChargingpointData(){
-    // let url='';
     return this.http.get(this.ChargingpointURL);
   }
 
   getConnectorData(){
-    // let url='';
     return this.http.get(this.ConnectorURL);
   }
 
@@ -40,19 +38,16 @@ export class ConfigService {
 
   saveNetworkConfigData(data: any){
     console.log(data);
-    // let url = ''
     return this.http.post(this.NetworkURL, data); 
   }
 
   saveChargingpointData(data: any){
     console.log(data);
-    // let url = ''
     return this.http.post(this.ChargingpointURL, data); 
   }
 
   saveConnectorConfigData(data: any){
     console.log(data);
-    // let url = ''
     return this.http.post(this.ConnectorURL, data); 
   }
 }

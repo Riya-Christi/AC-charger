@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
-  RfidUrl: 'https://jsonplaceholder.typicode.com/todos/1',
-  NetworkUrl: '',
-  ChargingpointUrl: '',
-  ConnectorUrl:'',  
+  RfidUrl: 'http://192.168.4.1/rfid',
+  NetworkUrl: 'http://192.168.4.1/network',
+  ChargingpointUrl: 'http://192.168.4.1/chargingpoint',
+  ConnectorUrl:'http://192.168.4.1/chargconnector',    
 };
