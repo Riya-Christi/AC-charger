@@ -8,6 +8,8 @@ import { NetworkComponent } from './network/network.component';
 import { ChargingpointComponent } from './chargingpoint/chargingpoint.component';
 import { ChargeConnectorComponent } from './charge-connector/charge-connector.component';
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { SidemenuComponent } from './sidemenu/sidemenu.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

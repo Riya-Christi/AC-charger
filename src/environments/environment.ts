@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  RfidUrl: 'https://jsonplaceholder.typicode.com/todos/1',
+  NetworkUrl: '',
+  ChargingpointUrl: '',
+  ConnectorUrl:'',  
 };
 
 /*

@@ -18,16 +18,17 @@ label{
     margin-bottom: 3px;
 }
 .form-group{
-    margin-bottom: 0.5rem;
+    margin: 10px;
 }
 .card-header{
     background-color: darkgray;
 }
 .card{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 @media screen and (min-width: 1200px) {
     .card{
+        /* width: 300px; */
         margin-right: 40px;
      } 
 } 
