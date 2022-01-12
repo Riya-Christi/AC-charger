@@ -16,35 +16,39 @@ export class ChargingpointComponent implements OnInit {
       this.configData = data;
       this.chargingpointConfig.patchValue({
         //  modelname: this.configData?.title,
-        modelname: this.configData?.cp_modelname,
-        serialNo: this.configData?.cp_srnumber,
-        vendor: this.configData?.cp_vendor,
-        latitude: this.configData?.cp_lat,
-        longitude: this.configData?.cp_long,
-        version: this.configData?.cp_fwver,
-        url: this.configData?.cp_url,
-        max_connector: this.configData?.cp_connector,
-        rfid: this.configData?.cp_rfid
+        cp_modelname: this.configData?.cp_modelname,
+        cp_srnumber: this.configData?.cp_srnumber,
+        cp_vendor: this.configData?.cp_vendor,
+        cp_lat: this.configData?.cp_lat,
+        cp_long: this.configData?.cp_long,
+        cp_fwver: this.configData?.cp_fwver,
+        cp_url: this.configData?.cp_url,
+        cp_connector: this.configData?.cp_connector,
+        cp_rfid: this.configData?.cp_rfid
       })
       console.log(this.configData);
     })
   }
 
   chargingpointConfig = new FormGroup({
-    modelname: new FormControl(''),
-    serialNo: new FormControl(''),
-    vendor: new FormControl(''),
-    latitude: new FormControl(''),
-    longitude: new FormControl(''),
-    version: new FormControl(''),
-    url: new FormControl(''),
-    max_connector: new FormControl(''),
-    rfid: new FormControl(''),
+    cp_modelname: new FormControl(''),
+    cp_srnumber: new FormControl(''),
+    cp_vendor: new FormControl(''),
+    cp_lat: new FormControl(''),
+    cp_long: new FormControl(''),
+    cp_fwver: new FormControl(''),
+    cp_url: new FormControl(''),
+    cp_connector: new FormControl(''),
+    cp_rfid: new FormControl(''),
   })
   ngOnInit(): void {
   }
   SaveData(){
-    this.config.saveChargingpointData(this.chargingpointConfig.value)
+    this.config.saveChargingpointData(this.chargingpointConfig.value).subscribe((result)=>{
+      console.log(result);
+    });
+    this.chargingpointConfig.reset();
+
   }
 
 }

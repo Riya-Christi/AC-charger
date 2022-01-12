@@ -15,29 +15,31 @@ export class RfidComponent implements OnInit {
     this.config.getRfidConfigData().subscribe((data)=>{
       this.configData = data;
       this.rfidConfig.patchValue({
-        // rfidTag1: this.configData?.title,
-        rfidTag1: this.configData?.tag1,
-        rfidTag2: this.configData?.tag2,
-        rfidTag3: this.configData?.tag3,
-        rfidTag4: this.configData?.tag4,
-        rfidTag5: this.configData?.tag5,
+        tag1: this.configData?.tag1,
+        tag2: this.configData?.tag2,
+        tag3: this.configData?.tag3,
+        tag4: this.configData?.tag4,
+        tag5: this.configData?.tag5,
       })
       console.log(this.configData);
     })
   }
 
   rfidConfig = new FormGroup({
-  rfidTag1: new FormControl(''),
-  rfidTag2: new FormControl(''),
-  rfidTag3: new FormControl(''),
-  rfidTag4: new FormControl(''),
-  rfidTag5: new FormControl(''),
+  tag1: new FormControl(''),
+  tag2: new FormControl(''),
+  tag3: new FormControl(''),
+  tag4: new FormControl(''),
+  tag5: new FormControl(''),
   });
 
   ngOnInit(): void {  
   }
 
   SaveData(){
-  this.config.saveRfidConfigData(this.rfidConfig.value);
+  this.config.saveRfidConfigData(this.rfidConfig.value).subscribe((result)=>{
+  console.log(result);
+  });
+  this.rfidConfig.reset();  
   }
 }

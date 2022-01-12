@@ -115,6 +115,9 @@ connectorConfig= new FormGroup({
   }
 
   SaveData(){
-    this.config.saveRfidConfigData(this.connectorConfig.value);
+    this.config.saveConnectorConfigData(this.connectorConfig.value).subscribe((result)=>{
+      console.log(result);
+    });
+    this.connectorConfig.reset(); 
     }
 }

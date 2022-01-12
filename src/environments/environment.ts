@@ -4,10 +4,10 @@
 
 export const environment = {
   production: false,
-  RfidUrl: 'http://192.168.4.1/rfid',
-  NetworkUrl: 'http://192.168.4.1/network',
-  ChargingpointUrl: 'http://192.168.4.1/chargingpoint',
-  ConnectorUrl:'http://192.168.4.1/chargconnector',  
+  RfidUrl: 'http://localhost:3000/rfid',
+  NetworkUrl: 'http://localhost:3000/network',
+  ChargingpointUrl: 'http://localhost:3000/chargingpoint',
+  ConnectorUrl:'http://localhost:3000/chargconnector',  
 };
 
 /*

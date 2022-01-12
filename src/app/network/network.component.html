@@ -5,7 +5,7 @@
     <div class="form-group row mb-3">
       <label for="interfaceType" class="col-lg-2 col-form-label text-center">Interface Type</label>
       <div class="col-lg-10 inputCenter">
-        <select class="form-control" name="interfaceType" id="interfaceType" formControlName="interfaceType">
+        <select class="form-control" name="interfaceType" id="interfaceType" formControlName="i_type">
           <option value="1">WiFi</option>
           <option value="2">GSM</option>
           <option value="3">Ethernet</option>
@@ -18,13 +18,13 @@
           <div class="form-group row mb-3">
             <label for="wifiName" class="col-lg-2 col-form-label text-center">WiFi Name</label>
             <div class="col-lg-10 inputCenter">
-              <input type="text" class="form-control" id="wifiName" placeholder="Enter _ssid" formControlName="wifiName">
+              <input type="text" class="form-control" id="wifiName" placeholder="Enter _ssid" formControlName="ssid">
             </div>
           </div>
           <div class="form-group row mb-3">
             <label for="wifi-pswd" class="col-lg-2 col-form-label text-center">Password</label>
             <div class="col-lg-10 inputCenter">
-              <input type="password" class="form-control" id="wifi-pswd" placeholder="Enter _password" formControlName="wifi_pswd">
+              <input type="password" class="form-control" id="wifi-pswd" placeholder="Enter _password" formControlName="pwd">
             </div>
           </div>
           <div class="form-group row mb-3">
@@ -41,19 +41,19 @@
           <div class="form-group row mb-3">
             <label for="apn_name" class="col-lg-2 col-form-label text-center">APN Name</label>
             <div class="col-lg-10 inputCenter ">
-              <input type="text" class="form-control" id="apn_name" style="width: 50%;"placeholder="Enter APN" formControlName="apn_name"> 
+              <input type="text" class="form-control" id="apn_name" style="width: 50%;"placeholder="Enter APN" formControlName="apn"> 
             </div>
           </div>
           <div class="form-group row mb-3">
             <label for="apn_pswd" class="col-lg-2 col-form-label text-center">Password</label>
             <div class="col-lg-10 inputCenter">
-              <input type="text" class="form-control" id="apn_pswd" style="width: 50%;"placeholder="Enter password" formControlName="apn_pswd">
+              <input type="text" class="form-control" id="apn_pswd" style="width: 50%;"placeholder="Enter password" formControlName="gsm_pass">
             </div>
           </div>
           <div class="form-group row mb-3">
             <label for="chargerID" class="col-lg-2 col-form-label text-center">GSM type</label>
             <div class="col-lg-10 inputCenter ">
-              <input type="text" class="form-control" id="chargerID" style="width: 50%;" placeholder="1" formControlName="GSM_type">
+              <input type="text" class="form-control" id="chargerID" style="width: 50%;" placeholder="1" formControlName="gsm_type">
             </div>
           </div>
       </div>

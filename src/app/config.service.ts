@@ -15,6 +15,9 @@ export class ConfigService {
   constructor(private http: HttpClient) { }
   getRfidConfigData(){
     return this.http.get(this.RfidURL);
+    // let url= 'http://localhost:3000/rfid'
+    // return this.http.get(url);
+
   }
 
   getNetworkConfigData(){
@@ -32,7 +35,6 @@ export class ConfigService {
 
   saveRfidConfigData(data: { value: any; }){
     console.log(data);
-    // let url = ''
     return this.http.post(this.RfidURL, data); 
   }
 
